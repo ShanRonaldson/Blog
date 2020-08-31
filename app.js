@@ -19,13 +19,44 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
 
-
 app.get("/", function(req, res){
-    res.render("list");
+    res.render("home", {homeContent:homeStartingContent}); // render the above homeStartingContent on the home page
 });
 
+app.get("/about", function(req, res){
+    res.render("about", {aboutContent : aboutContent});
+});
+
+app.get("/compose", function(req, res){
+    res.render("compose");
+});
+
+app.post("/compose", function(req, res){
+    console.log(req.body.postTitle);
+});
+
+app.get("/contact", function(req, res){
+    res.render("contact", {contactContent : contactContent});
+});
+
+app.get("/post", function(req, res){
+    res.render("post");
+});
 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running on port 3000.");
 });
 
+
+
+// var header = document.getElementById("navBar");
+// var nav = document.getElementsByClassName("nav");
+
+// for (var i = 0; i < nav.length; i ++){
+
+//     nav[i].addEventListener("click", function(){
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className ++ " active";
+//     });
+// }

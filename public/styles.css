@@ -1,63 +1,107 @@
-
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #f5f1da;
-    margin: 0;
-    padding: 0;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #f5f1da;
+  margin: 0;
+  padding: 0;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #96bb7c;
-    position: sticky;
-    width: 100%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #96bb7c;
+  position: sticky;
+  width: 100%;
 }
 
-li{
-    float: left;
+li {
+  float: left;
 }
 
 li a {
-    display: block;
-    color: #f5f1da;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: #f5f1da;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a:hover:not(.active){
-    background-color: #77A56C;
+li a:hover:not(.active) {
+  background-color: #77a56c;
 }
 
-.active{
+/* li a.active{
     background-color:#446D56;
+} */
+
+.content {
+  flex: 1 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+.footer {
+  background-color: #eebb4d;
+  font-size: 15px;
+  margin: 0;
+  padding: 2.5%;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 1.8;
+  word-spacing: 3px;
 }
 
-.content{
-    flex: 1 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-}
-.footer{
-    background-color: #eebb4d;
-    font-size: 15px;
-    margin: 0;
-    padding: 2.5%;
-    flex-shrink: 0;
-    text-align: center ;
-    line-height: 1.8;
-    word-spacing: 3px;
+#heading {
+  background-color: #e3dfc8;
+  font-size: 30px;
+  margin: 0;
+  padding: 5%;
+  word-spacing: 15px;
 }
 
-#heading{
-    background-color: #e3dfc8;
-    font-size: 30px;
-    margin: 0;
-    padding: 5%;
-    word-spacing: 15px;
+input {
+  margin: 0 0 2% 0;
+  display: block;
+  font-size: inherit;
+}
+
+textarea {
+  background-color: #faf8f3;
+  resize: vertical;
+  width: 65%;
+  height: 25rem;
+  display: block;
+  font-size: inherit;
+  float: left;
+  margin: 0 0 10% 0;
+}
+
+.publish {
+  margin-left: 5%;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #d7d8af;
+  border-style: outset;
+  border-color: #c4cf9d;
+  border-width: 3px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.composeHeading {
+  padding-left: 5%;
+  align-self: flex-start;
+}
+
+form {
+  margin: 1% 2% 5% 5%;
+}
+
+.btn {
+    display: flex;
 }

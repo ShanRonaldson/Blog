@@ -1,18 +1,13 @@
-<%- include("header") -%> 
+<%- include("partials/header.ejs") -%> 
 
 
-<div class="box", id="heading">
-<h1>Daily Journal</h1>
-</div>
-
-<ul>
-    <li><a class = "active" href="#home">Home</a></li>
-    <li><a href="#newpost"> Create new post</a></li>
-    <li><a href="#contactPage">Contact Me</a></li>
-</ul>
 
 <div class="content">
 
+    <h2>Home</h2>
+    <p>
+        <%= homeContent %> 
+    </p>
 
 
 
@@ -20,4 +15,4 @@
 </div>
 
     
-<%- include("footer") -%> 
+<%- include("partials/footer") -%> 
