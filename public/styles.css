@@ -46,7 +46,7 @@ li a:hover:not(.active) {
   background-color: #eebb4d;
   font-size: 15px;
   margin: 0;
-  padding: 2.5%;
+  padding: 25px;
   flex-shrink: 0;
   text-align: center;
   line-height: 1.8;
@@ -55,14 +55,11 @@ li a:hover:not(.active) {
 
 #heading {
   background-color: #e3dfc8;
-  font-size: 30px;
-  margin: 0;
-  padding: 5%;
-  word-spacing: 15px;
+  padding: 20px;
 }
 
 input {
-  margin: 0 0 2% 0;
+  margin: 0 0 1% 0;
   display: block;
   font-size: inherit;
 }
@@ -74,12 +71,12 @@ textarea {
   height: 25rem;
   display: block;
   font-size: inherit;
-  float: left;
-  margin: 0 0 10% 0;
+  /* float: left; */
+  margin: 0 0 0 0;
 }
 
 .publish {
-  margin-left: 5%;
+  /* margin-left: 5%; */
   font-family: inherit;
   font-size: inherit;
   background-color: #d7d8af;
@@ -89,7 +86,7 @@ textarea {
   border-radius: 4px;
   overflow: hidden;
   display: block;
-  margin-top: auto;
+  margin-top: 2.5%;
   margin-bottom: 0;
 }
 
@@ -103,5 +100,29 @@ form {
 }
 
 .btn {
-    display: flex;
+  display: flex;
+}
+
+label {
+  margin: 0;
+  margin-bottom: 1%;
+}
+
+h2 {
+  padding: 0 0 0 35px;
+  font-size: 35px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  margin-left: 35px;
+  padding: 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 2% 0 2% 35px;
+  word-spacing: 15px;
 }

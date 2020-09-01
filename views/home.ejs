@@ -1,18 +1,14 @@
-<%- include("partials/header.ejs") -%> 
-
-
+<%- include("partials/header.ejs") -%>
 
 <div class="content">
+  <h2>Home</h2>
+  <p><%= homeContent %></p>
 
-    <h2>Home</h2>
-    <p>
-        <%= homeContent %> 
-    </p>
+  <% console.log(posts) %> <% posts.forEach(function(post){ %>
+  <h2><%= post.title %></h2>
+  <p><%=post.content %></p>
 
-
-
-
+  <% }) %>
 </div>
 
-    
-<%- include("partials/footer") -%> 
+<%- include("partials/footer") -%>

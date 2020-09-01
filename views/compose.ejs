@@ -4,8 +4,10 @@
 
 <div class="composeContent">
   <form class="formCompose" action="/compose" method="POST">
+    <label>Title</label>
     <input class="composeTitleCreate" type="text" name="postTitle" />
-    <textarea name="newPost" cols="num" rows="num" required></textarea>
+    <label>Post</label>
+    <textarea name="postBody" cols="num" rows="num" required></textarea>
     <div class="btn">
         <button type="submit" class="publish">Publish</button>
     </div>
