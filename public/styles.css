@@ -1,3 +1,6 @@
+
+/* color palette 196174  on color hunt */
+
 body {
   display: flex;
   min-height: 100vh;
@@ -71,13 +74,12 @@ textarea {
   height: 25rem;
   display: block;
   font-size: inherit;
-  /* float: left; */
+  
   margin: 0 0 0 0;
 }
 
 .publish {
-  /* margin-left: 5%; */
-  font-family: inherit;
+   font-family: inherit;
   font-size: inherit;
   background-color: #d7d8af;
   border-style: outset;
